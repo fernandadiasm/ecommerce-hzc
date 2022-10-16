@@ -2,9 +2,9 @@
 
 🚧in construction...🚧
 
-## Project's goal
+## Project's goals
 * Create a responsive website
-* Put into practice some **Flexbox** techniques
+* Put into practice some **Flexbox** and **Mobile First** techniques
 * Put into practice some JavaScript concepts
 
 
