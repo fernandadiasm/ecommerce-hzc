@@ -1,6 +1,5 @@
-# HZC
-
-🚧in construction...🚧
+## HZC
+🚧 in construction... 🚧
 
 ## Project's goals
 * Create a responsive website
