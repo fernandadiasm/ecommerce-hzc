@@ -191,12 +191,12 @@ body {
     .principal {
         display: grid;
         grid-template-columns: auto 1fr auto;
-        grid-template-areas: 
+        grid-template-areas:
             "titulo-pagina titulo-pagina titulo-pagina"
             "destaque-video destaque-video videos-recentes"
             "secao-videos secao-videos secao-videos"
             "produtos-recentes destaque-produtos destaque-produtos"
-            "secao-produtos secao-produtos secao-produtos"       
+            "secao-produtos secao-produtos secao-produtos"
         ;
         column-gap: 32px;
         padding: 16px 60px;
@@ -254,12 +254,12 @@ body {
 
 .cartao__info--tempo::before {
     content: "\e90c";
-    margin-right: 8px;    
+    margin-right: 8px;
 }
 
 .cartao__info--visualizacao::before {
     content: "\e90f";
-    margin-right: 8px;    
+    margin-right: 8px;
 }
 
 .cartao__botao {
@@ -291,10 +291,11 @@ body {
 .cartao--recentes {
     display: none;
 }
+
 .cartao__info--compra::before {
     content: "\e905";
-    margin-right: 8px;    
-} 
+    margin-right: 8px;
+}
 
 .cartao__botao--compra::before {
     content: "\e901";
@@ -340,7 +341,7 @@ body {
         color: #0480DC;
         justify-self: flex-end;
     }
-    
+
     .cartao__lista {
         display: grid;
         row-gap: 16px;
@@ -383,24 +384,95 @@ body {
     .destaque-video {
         grid-area: destaque-video;
     }
-    
+
     .videos-recentes {
         grid-area: videos-recentes;
     }
-    
+
     .secao-videos {
         grid-area: secao-videos;
     }
-    
+
     .destaque-produtos {
         grid-area: destaque-produtos;
     }
-    
+
     .produtos-recentes {
         grid-area: produtos-recentes;
     }
-    
+
     .secao-produtos {
         grid-area: secao-produtos;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .secao {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+
+    .secao-videos {
+        grid-area: secao-videos;
+    }
+
+    .destaque-produtos {
+        grid-area: destaque-produtos;
+    }
+
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
+
+    .secao-produtos {
+        grid-area: secao-produtos;
+    }
+}
+
+/* Picos */
+
+@media screen and (min-width: 1440px) {
+    .principal--picos {
+        grid-template-areas:
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "picos-mapa picos-mapa picos-favoritos"
+            "secao-picos-mais-visitados secao-picos-mais-visitados secao-picos-mais-visitados"
+        ;
+    }
+}
+
+.picos-mapa {
+    width: 100%;
+    height: 468px;
+    background-image: url(../img/mapa-picos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.cartao__botao--pico::before {
+    content: "\e908";
+    font-size: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .picos-mapa {
+        grid-area: picos-mapa;
+    }
+
+    .picos-favoritos {
+        grid-area: picos-favoritos;
+    }
+
+    .secao-picos-mais-visitados {
+        grid-area: secao-picos-mais-visitados;
     }
 }
