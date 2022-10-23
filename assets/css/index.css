@@ -291,6 +291,15 @@ body {
 .cartao--recentes {
     display: none;
 }
+.cartao__info--compra::before {
+    content: "\e905";
+    margin-right: 8px;    
+} 
+
+.cartao__botao--compra::before {
+    content: "\e901";
+    font-size: 24px;
+}
 
 @media screen and (min-width: 1440px) {
     .cartao--destaque {
