@@ -1,7 +1,7 @@
 <h1 align="center"> HZC </h1>
 
 <p align="center">
-  <img alt="HZC" src=".github/PREVIEW.png" width="60%">
+  <img alt="HZC" src=".github/preview.png" width="50%">
 </p>
 
 <p align="center">
